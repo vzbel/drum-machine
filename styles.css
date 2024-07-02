@@ -4,3 +4,8 @@
     margin: 0;
     padding: 0;
 }
+
+.drum-machine{
+    /* Drum machine color */
+    background-color: grey;
+}
