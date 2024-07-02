@@ -1,3 +1,10 @@
+:root{
+    /* Useful colors */
+    --black-color: rgb(28, 27, 27);
+    --dark-color: rgb(67, 65, 65);
+    --beige-color: rgb(235, 234, 215);
+}
+
 *{
     /* Initialize sizing, margin, and padding. */
     box-sizing: border-box;
@@ -5,7 +12,71 @@
     padding: 0;
 }
 
+html{
+    /* Root element sizing */
+    font-size: 24px;
+}
+
+body{
+    /* Display content on center */
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    /* Main Font */
+    font-family: Helvetica, sans-serif;
+
+    /* Background color */
+    background-color: var(--beige-color);
+}
+
+/* Drum machine container */
 .drum-machine{
+    /* Flex container */
+    display: flex;
+    /* Wrap elements that overflow the container */
+    flex-wrap: wrap;
+    /* Gap between child elements */
+    gap: 1rem;
+    /* Justify content horizontally */
+    justify-content: center;
+    
+    /* Width */
+    width: 30rem;
+
+    /* Center horizontally */
+    margin: 0 auto;
+    /* Border style */
+    border-radius: 10px;
+    /* Box shadow */
+    box-shadow: -10px 10px var(--black-color);
+
+    /* Padding */
+    padding: 1rem;
+    
+
     /* Drum machine color */
-    background-color: grey;
+    background-color: var(--dark-color);
+}
+
+/* Drum machine buttons */
+.drum-pad{
+    /* Flex sizing */
+    flex: 1 0 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+
+    /* Border style */
+    border-radius: 10px;
+
+    /* Box shadow */
+    box-shadow: -4px 1px var(--black-color);
+
+    /* Padding */
+    padding: 20px 30px;
+
+    /* Font size */
+    font-size: 3rem;
+
+    /* Drum button color */
+    background-color: var(--beige-color);
 }
