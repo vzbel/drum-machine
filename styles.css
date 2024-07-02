@@ -3,6 +3,7 @@
     --black-color: rgb(28, 27, 27);
     --dark-color: rgb(67, 65, 65);
     --beige-color: rgb(235, 234, 215);
+    --light-color: rgb(245, 245, 242);
 }
 
 *{
@@ -68,6 +69,8 @@ body{
     /* Border style */
     border-radius: 10px;
 
+    /* Transition */
+    transition: all 1s ease-in-out;
     /* Box shadow */
     box-shadow: -4px 1px var(--black-color);
 
@@ -79,4 +82,13 @@ body{
 
     /* Drum button color */
     background-color: var(--beige-color);
+
+    /* Cursor pointer */
+    cursor: pointer;
+}
+
+/* Drum machine button hover behavior */
+.drum-pad:hover{
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
